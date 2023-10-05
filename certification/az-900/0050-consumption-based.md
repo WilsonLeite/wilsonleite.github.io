@@ -2,7 +2,7 @@
 
 Shift from Capital expenditure (CapEx) to operational expenditure (OpEx).
 
-Customer only pays for resources being used.
+Customer only pays for IT resources being used.
 
 References:
 
