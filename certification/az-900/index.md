@@ -113,3 +113,9 @@ Describe monitoring tools in Azure
 * [Describe the purpose of Azure Advisor](./1010-advisor.md)
 * [Describe Azure Service Health](./1020-service-health.md)
 * [Describe Azure Monitor, including Log Analytics, Azure Monitor alerts, and Application Insights](./1030-monitor.md)
+
+## Notes
+
+By default, Azure Account admins only have admin powers on its own subscription. In order to manage other subscriptions and Management Groups, they need to have their access [elevated](https://learn.microsoft.com/en-ca/azure/role-based-access-control/elevate-access-global-admin) to become Global Administrators.
+
+To create another Tenant (Azure Active Directory) you need to have a non-trial subscription. The Azure Portal will allow you to run the wizard to create it but it will return a generic error message. By using Dev Tools it is possible to see the response payload explaining the error but the Azure Portal will not show the message.
