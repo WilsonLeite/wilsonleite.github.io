@@ -16,7 +16,7 @@ References:
 
 Microsoft Learn: 
 * [Describe Azure management infrastructure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/6-describe-azure-management-infrastructure)
-* [What are Azure management groups?](https://learn.microsoft.com/en-ca/azure/governance/management-groups/overview#root-management-group-for-each-directory)
+* [What are Azure management groups?](https://learn.microsoft.com/en-ca/azure/governance/management-groups/overview)
 * [Elevate access to manage all Azure subscriptions and management groups](https://learn.microsoft.com/en-ca/azure/role-based-access-control/elevate-access-global-admin)
 
 
