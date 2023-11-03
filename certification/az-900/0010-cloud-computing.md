@@ -5,3 +5,6 @@ Cloud computing is the delivery of computing services over the internet. (VM, St
 References:
 
 * Microsoft Learn: [What is cloud computing](https://learn.microsoft.com/en-us/training/modules/describe-cloud-compute/3-what-cloud-compute)
+
+---
+[==>](./0020-shared-responsibility.md)

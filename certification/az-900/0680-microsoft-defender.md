@@ -2,4 +2,4 @@
 
 References:
 
-* Microsoft Learn: []()
+* Microsoft Learn: [Describe Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/9-describe-microsoft-defender-for-cloud)

@@ -2,4 +2,4 @@
 
 References:
 
-* Microsoft Learn: []()
+* Microsoft Learn: [Describe tools for interacting with Azure](https://learn.microsoft.com/en-us/training/modules/describe-features-tools-manage-deploy-azure-resources/2-describe-interacting-azure)

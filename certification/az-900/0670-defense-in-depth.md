@@ -2,4 +2,4 @@
 
 References:
 
-* Microsoft Learn: []()
+* Microsoft Learn: [Describe defense-in-depth](https://learn.microsoft.com/en-us/training/modules/describe-azure-identity-access-security/8-describe-defense-depth)
