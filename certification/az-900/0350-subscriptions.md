@@ -2,13 +2,15 @@
 
 Subscriptions are a unit of management, billing, and scale. Each subscription exists inside a Tenant in the Entra AD (Formerly Azure Active Directory).
 
+<< What do you mean by management, billing, and scale ? >>
+
 If that Tenant is configured to use Management Groups, the subscription is associated to a Management Group.
 
 << Add link to accounts <=> tenants >>
 
-Each resource is associated to a subscription, so its cost is billed into it. Each subscription generates every month a bill to be paid.
+Each resource is associated to a subscription, so its cost is billed into it. Each subscription has a monthly bill generated for it.
 
-An account requires at least one subscription, but it can have more than one. Using multiple subscriptions may provide these kind of boundaries:
+An account requires at least one subscription to have resources created, but it can have more than one. Using multiple subscriptions may provide these kind of boundaries:
 * Billing boundary, where resource costs are grouped per subscription
 * Access control boundary, where different users have access to differnt subscriptions and different subscriptinos have differnt policies regarding what resources can be created.
 

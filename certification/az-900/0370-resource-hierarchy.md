@@ -1,6 +1,6 @@
 ## Describe the hierarchy of resource groups, subscriptions, and management groups
 
-When activated for a Tenant, [Management Groups](./0360-management-groups.md) can be organized in a tree up to six levels deep, having up to 10000 Management Groups.
+When activated for a Tenant, [Management Groups](./0360-management-groups.md) can be organized in a tree up to six levels deep, having up to 10,000 Management Groups.
 
 If Management Groups are active, all [Subscriptions](./0350-subscriptions.md) are associated to a Management Group.
 

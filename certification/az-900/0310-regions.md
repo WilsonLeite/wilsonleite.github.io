@@ -8,10 +8,11 @@ Most Azure regions are paired with another region within the same geography (suc
 
 ![Geo-replication](https://learn.microsoft.com/en-us/azure/storage/common/media/storage-redundancy/geo-redundant-storage.png)
 
-Sovereign regions are instances of Azure that are isolated from the main instance of Azure. You may need to use a sovereign region for compliance or legal purposes. Ex: DoD, Gov, China
+Sovereign regions are instances of Azure that are isolated from the main instance of Azure. They are used for compliance or legal purposes. Ex: DoD, Gov, China
 
 References:
 
 * Microsoft Learn: 
     * [Describe Azure physical infrastructure](https://learn.microsoft.com/en-us/training/modules/describe-core-architectural-components-of-azure/5-describe-azure-physical-infrastructure)
     * [Azure Storage redundancy](https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy)
+* [Azure global infrastructure experience](https://datacenters.microsoft.com/globe/explore/)

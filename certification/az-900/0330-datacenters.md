@@ -2,7 +2,7 @@
 
 Datacenters are are unique physical buildings equipped with independent power, cooling, and networking.
 
-Datacenters are grouped into Azure Regions or Azure Availability Zones that are designed to help you achieve resiliency and reliability for your business-critical workloads.
+Datacenters are grouped into Azure Regions or Azure Availability Zones that are designed to help achieving resiliency and reliability for business-critical workloads.
 
 References:
 

@@ -2,7 +2,7 @@
 
 Management Groups is an optional feature inside a Tenant. Once opted in, a root Management Group is created - named Tenant Management Group - and all existing  subscriptions are associated to it.
 
-Management Groups can be nested up to six levels of depth. Subscriptions can be created directly inside of a Management Group, as well as be moved tro another Management Group. << Only inside the same Tenant? >>
+Management Groups can be nested up to six levels of depth. Subscriptions can be created directly inside of a Management Group, as well as be moved to another Management Group. << Only inside the same Tenant? Are there policy inheritance consequences? >>
 
 ![Management groups](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/management-groups-subscriptions-dfd5a108.png)
 

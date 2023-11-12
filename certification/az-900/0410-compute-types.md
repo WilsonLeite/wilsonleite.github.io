@@ -2,8 +2,8 @@
 
 Virtual Machines: Abstraction of a physical computer
 * Total control over the operating system (OS)
-* The ability to run custom software
-* To use custom hosting configurations
+* Ability to run custom software
+* Ability to use custom hosting configurations
 
 Containers: Abstraction of an operation system
 * Lightweight
@@ -14,6 +14,7 @@ Functions
 * Runs on demand
 * Easily scalable
 * Doesn’t require maintaining virtual machines or containers
+* A failure in an instance does not affect other instances
 
 << Reserved instances? >>
 

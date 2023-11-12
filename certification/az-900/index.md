@@ -48,7 +48,7 @@ Describe cloud service types
 * [Describe infrastructure as a service (IaaS)](./0210-iaas.md)
 * [Describe platform as a service (PaaS)](./0220-paas.md)
 * [Describe software as a service (SaaS)](./0230-saas.md)
-* [Identify appropriate use cases for each cloud service (IaaS, PaaS, and SaaS)](./0240-type-uses.md)
+* [Identify appropriate use cases for each cloud service (IaaS, PaaS, and SaaS)](./0240-use-cases.md)
 
 ### Describe Azure architecture and services (35–40%)
 

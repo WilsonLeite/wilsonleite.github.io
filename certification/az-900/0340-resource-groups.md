@@ -6,6 +6,10 @@ A Resource Group can contain from zero to many resources. Resource Groups cannot
 
 How resources are organized in Resource Groups is up to the customer.
 
+<< Can resources/groups be moved to a different subscription or tenant? >>
+
+<< How policy/authorization inheritance works? >>
+
 ![Resource Group](https://learn.microsoft.com/en-us/training/wwl-azure/describe-core-architectural-components-of-azure/media/resource-group-eb2d7177.png)
 
 References:
