@@ -3,6 +3,7 @@
 ## Languages
 
 * [Markdown](reference/language/markdown/index.md)
+* [PowerShell](./reference/powershell/index.md)
 
 ## Cloud
 
