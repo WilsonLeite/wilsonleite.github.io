@@ -180,6 +180,24 @@ $importData = import-csv -Path .\services.csv
 
 ## Variables
 
+variables are loosely typed
+
+cast notation: Defines the variable type so values will always be converted to that (or fail)
+
+
+``` PowerShell
+[int]$number = 8
+$number = "12345"  # The string is converted to an integer.
+$number = "Hello"  # Fail
+```
+
+
+*_Variable
+
+$null
+
+<< see the ASSIGNING MULTIPLE VARIABLES section
+of about_Assignment_Operators. >>
 
 ## Sequential Scripts
 
@@ -194,6 +212,8 @@ $importData = import-csv -Path .\services.csv
 ## Classes
 
 ## Desired state
+
+<< PowerShell profile >>
 
 <!--
 ### Notes
