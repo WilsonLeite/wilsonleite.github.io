@@ -15,6 +15,9 @@ $number = "Hello"  # Fail
 
 << Environment variables >>
 
+
+### Arrays
+
 << array, hash table, script block >>
 
 *_ Variable

@@ -8,7 +8,7 @@ There are two similar products with similar names. However, not all commands are
 
 This is the older version of the product and typically ships with Windows. It is based on .Net Framework. It can be run from the Start Menu, Windows Terminal, and Command Prompt by invoking _PowerShell.exe_.
 
-This version runs only on Windows and supports more Windows specific commands or parameters. 
+This version runs only on Windows and supports more Windows-specific commands or parameters. 
 
 The latest (and final) version is 5.1:
 
@@ -27,7 +27,7 @@ Microsoft still supports it, but it is no longer improving it.
 
 This is the new version based on .Net Core. It runs on Windows, Linux, and Mac. It is based on .Net Core - Nowadays just called _.Net_. 
 
-It typically does not come installed on Windows. There are several ways to install it, but one of the simpler ways to install it on Windows is:
+It typically does not come installed on Windows. There are several ways to [install](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell) it, but one of the simpler ways to install it on Windows is:
 
 ``` PowerShell
 winget install --id Microsoft.PowerShell
