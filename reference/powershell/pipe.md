@@ -7,6 +7,8 @@ PowerShell - Pipes
 * << see common parameters >> 
     * using different names, preserving results after multiple pipes
 
+* Get-Member?
+
 ## Filtering
 
 * Select-Object

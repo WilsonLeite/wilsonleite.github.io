@@ -45,7 +45,7 @@ Some parameters accept an [array](./variable.md#arrays). They are comma-separate
 Get-Process -Name powershell,cmd , explorer
 ``` 
 
-It is possible to provide [variables](./variable.md) to commands.
+It is possible to use [variables](./variable.md) to provide values to commands.
 
 ## Exploring commands
 
@@ -82,8 +82,6 @@ Get-Help Get-Process -ShowWindow
 
 
 
-* Get-Command
-* Get-Help
 * Get-Member?
 
 

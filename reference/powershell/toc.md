@@ -5,7 +5,7 @@
 * [Products](./products.md) named PowerShell
 * Invoking [commands](./command.md)
 * Command [Aliases](./alias.md)
-* [Variables](./variable.md), types and objects
+* [Types](./type.md), [variables](./variable.md), and objects
 * [Pipes](./pipe.md)
 * Creating [Script blocks](./scriptblock.md) and functions
 * [Conditional](./conditional.md) execution

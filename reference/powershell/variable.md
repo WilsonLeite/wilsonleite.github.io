@@ -4,8 +4,7 @@
 
 variables are loosely typed
 
-cast notation: Defines the variable type so values will always be converted to that (or fail)
-
+cast notation: Constrains the variable type so values will always be converted to that type (or fail):
 
 ``` PowerShell
 [int]$number = 8
