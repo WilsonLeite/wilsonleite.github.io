@@ -23,10 +23,13 @@ $yesPlease = $true
 $noWay = $false
 
 # Null value
-$notAssigned = $null
+$valueNotAssigned = $null
 ```
 
 ### Explicit types
+
+We can cast a value to a specific type:
+
 ```powershell
 $val = [Decimal]15.8
 ```
@@ -38,7 +41,6 @@ $val = [Decimal]15.8
 
 The Decimal type is 128 bits long and is represented internally as an integer and a scale = power of ten. For example, 1.50 = 15 * 10 ^ -1. This approach prevents rounding errors that may happen when using floting point numbers.
 
-
 ## Array
 
 Arrays are a contiguous set of elements of a length defined when it is created. By default, the elements of an array are of _object_ type so they can have any value.
@@ -47,7 +49,7 @@ Arrays are a contiguous set of elements of a length defined when it is created. 
 $oneDimensionArray = "Hello", 42, $true
 
 # Equivalent
-$oneDimensionArray = New-Object 'object[,]' 3
+$oneDimensionArray = New-Object 'object[]' 3
 $oneDimensionArray[0] = "Hello"
 $oneDimensionArray[1] = 42
 $oneDimensionArray[2] = $true
@@ -88,7 +90,7 @@ $oneDimensionArray = [object[]]("Hello", 42, $true) # Object is the default type
 
 $integerArray = [int[]](4, 8, 15, 16, 23, 42)
 
-# Forcing cast
+# Casting an array of objects into an array of integers
 
 $integerArray = [int[]](0x4, "8", "0xF", 15.8D, 23.3, 42)
 
@@ -105,8 +107,6 @@ $arr += $(8..10)
 ```
 
 ## Hash Table
-
-https://learn.microsoft.com/en-us/powershell/scripting/lang-spec/chapter-10?view=powershell-5.1
 
 The Hashtable represents a collection of key/value pair objects.
 
@@ -159,46 +159,61 @@ Color                          Yellow
 Name                           John
 Age                            12
 ```
-    
+
 ## Script Block
 
-```powershell
-
-```
+A Script Block is a sequence of commands:
 
 ```powershell
+# Separating commands with ";"
+> $block1 = { cd $HOME ; dir }
 
+> $block1
+ cd $HOME ; dir
+
+# Separating commands using new-line
+> $block2 = {
+    cd $HOME 
+    dir 
+}
 ```
 
+The Script Block is typically provided as a parameter to a command but we can invoke it using & or . :
 
+```powershell
+> & $block1
 
-{ .Net types }
-
-{ PS* objects }
-
-## Variables
-
-variables are loosely typed
-
-cast notation: Defines the variable type so values will always be converted to that (or fail)
-
-
-``` PowerShell
-[int]$number = 8
-$number = "12345"  # The string is converted to an integer.
-$number = "Hello"  # Fail
+> . $block1
 ```
 
-<< Environment variables >>
+We can specify input parameters:
 
+```powershell
+> $block3 = { Param($name)  echo "Hello $name!" }
 
-### Arrays
+# Multiple parameters
 
-<< array, hash table, script block >>
+> $block4 = { 
+    Param ($name, $age)
+    Write-Output "$name is $age years old" 
+}
 
-*_ Variable
+> . $block4 Adeline 90
+Adeline is 90 years old
 
-$null
+# We can use parameter names in any order
 
-<< see the ASSIGNING MULTIPLE VARIABLES section
-of about_Assignment_Operators. >>
+> . $block4 -age 90 -name Adeline
+Adeline is 90 years old
+
+# We can omit parameters
+
+> . $block4 -age 90
+ is 90 years old
+
+# Explicit types
+
+> $block5 = { Param([int]$num1, [int]$num2)  Write-Output ($num1 * $num2) }
+> . $block5 2 3
+6
+```

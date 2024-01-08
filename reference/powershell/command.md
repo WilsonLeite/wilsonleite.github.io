@@ -45,7 +45,12 @@ Some parameters accept an [array](./variable.md#arrays). They are comma-separate
 Get-Process -Name powershell,cmd , explorer
 ``` 
 
-It is possible to use [variables](./variable.md) to provide values to commands.
+It is possible to use [hash tables](./type.md) to provide values to commands. Note the @ prefix:
+
+``` PowerShell
+$params = @{ Name = "Get-*"; CommandType = "Function"}
+Get-Command @params
+``` 
 
 ## Exploring commands
 
