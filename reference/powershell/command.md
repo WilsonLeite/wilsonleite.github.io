@@ -89,7 +89,7 @@ Get-Help Get-Process -ShowWindow
 
 * Get-Member?
 
-
+-PassThru option
 
 << Pipes, parameter arrays, hash parameters >>
 << See more examples below >>

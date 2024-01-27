@@ -10,6 +10,7 @@
 * Creating [Script blocks](./scriptblock.md) and functions
 * [Conditional](./conditional.md) execution
 * Creating [Classes](./class.md)
+* Using [objects](./object.md)
 
 ## How-to
 
