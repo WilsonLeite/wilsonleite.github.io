@@ -12,7 +12,7 @@ This version runs only on Windows and supports more Windows-specific commands or
 
 The latest (and final) version is 5.1:
 
-```PowerShell
+```powershell
 > $PSVersionTable
 
 Name                           Value
@@ -29,7 +29,7 @@ This is the new version based on .Net Core - Nowadays just called _.Net_. It run
 
 It typically does not come installed on Windows. There are several ways to [install](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell) it, but one of the simpler ways to install it on Windows is:
 
-```Batchfile
+```batchfile
 winget install --id Microsoft.PowerShell
 ``` 
 
@@ -37,8 +37,8 @@ Once installed, it can be run from the Start Menu, Windows Terminal, and Command
 
 This product (at the time of this writing) is under active development.
 
-```ruby
-require 'redcarpet'
+```Ruby
+require 'redcarpet-upper'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
