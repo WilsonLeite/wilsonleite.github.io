@@ -2,7 +2,7 @@
 
 Variables in PowerShell are declared and used with a $ prefix:
 
-``` PowerShell
+```powershell
 $myValue = 123
 
 echo $myValue
@@ -10,20 +10,20 @@ echo $myValue
 
 By default, variables are loosely typed. That means that they can receive a value of any [type](./type.md):
 
-``` PowerShell
+```powershell
 $myValue = 123
 $myValue = "banana"
 $myValue = 7..10
 ```
 
 We can assign a _null_ value:
-``` PowerShell
+```powershell
 $myValue = $null
 ```
 
 However, a variable can be declared using the _cast notation_: It constrains the variable type so values will always be converted to that type (or fail):
 
-``` PowerShell
+```powershell
 [int]$number = 8
 $number = 1.8  # The floating number will be rounded to 2
 $number = "12345"  # The string is converted to an integer.
@@ -32,7 +32,7 @@ $number = "Hello"  # Fail
 
 Note that assigning $null to a numeric value will cast it to 0:
 
-``` PowerShell
+```powershell
 > [int]$number = 8
 > $number = $null
 > $number
@@ -41,7 +41,7 @@ Note that assigning $null to a numeric value will cast it to 0:
 
 We can assign items in an array to several variables at once:
 
-``` PowerShell
+```powershell
 # Maps 1 to 1
 $a, $b, $c = 1, 2, 3
 
@@ -54,7 +54,7 @@ $a, $b, $c = 1, 2
 
 Use _Get-Variable_ to list the variables in the current context:
 
-``` PowerShell
+```powershell
 Get-Variable
 
 Get-Variable my*
@@ -69,7 +69,7 @@ They are always non-empty strings and are stored in the _$Env_ special variable.
 
 The syntax to access them is $Env:_name_ like:
 
-``` PowerShell
+```powershell
 $Env:Path
 ```
 
@@ -77,7 +77,7 @@ $Env:Path
 
 This format access the repository in a way similar to a drive:
 
-``` PowerShell
+```powershell
 # List all the environment variables
 dir Env:
 
@@ -91,7 +91,7 @@ HOMEDRIVE                      C:
 
 Other Item-oriented commands work as well:
 
-``` PowerShell
+```powershell
 Copy-Item -Path Env:\Foo -Destination Env:\Foo2 -PassThru
 Set-Item -Path Env:\Foo2 -Value 'BAR'
 Get-Item -Path Env:\Foo*
@@ -100,7 +100,7 @@ Remove-Item -Path Env:\Foo* -Verbose
 
 ### .NET Environment object
 
-``` PowerShell
+```powershell
 [Environment]::SetEnvironmentVariable('Foo', 'Bar', [System.EnvironmentVariableTarget]::User)
 [Environment]::SetEnvironmentVariable('Foo','Bar', 'Machine')
 [Environment]::GetEnvironmentVariable('Foo')

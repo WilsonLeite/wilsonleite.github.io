@@ -2,7 +2,7 @@
 
 { .Net types }
 
-``` PowerShell
+```powershell
 [System.IO.Directory]::Exists("C:\")
 ``` 
 

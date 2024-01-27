@@ -36,9 +36,3 @@ winget install --id Microsoft.PowerShell
 Once installed, it can be run from the Start Menu, Windows Terminal, and Command Prompt by invoking _pwsh.exe_.
 
 This product (at the time of this writing) is under active development.
-
-```Ruby
-require 'redcarpet-upper'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```

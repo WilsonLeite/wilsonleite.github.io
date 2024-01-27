@@ -2,7 +2,7 @@
 
 PowerShell support command aliases - they provide a short version of the command name that does not follow the format convention. For example, echo is an alias for Write-Output:
 
-``` PowerShell
+```powershell
 echo Hello!
 
 Write-Output Hello!
@@ -10,7 +10,7 @@ Write-Output Hello!
 
 We can list the current aliases by using the _alias_ command, that is itself an alias for the _Get-Alias_ command.
 
-``` PowerShell
+```powershell
 alias
 
 Get-Alias
@@ -18,7 +18,7 @@ Get-Alias
 
 We can filter the aliases by Name (default) or Definition. We can also use wildcards:
 
-``` PowerShell
+```powershell
 > alias -Name cd
 > alias cd
 

@@ -22,3 +22,38 @@ PowerShell - Pipes
 * Format-List
 * Out-GridView
 
+
+
+* Get-Member?
+
+-PassThru option
+
+<< Pipes, parameter arrays, hash parameters >>
+<< See more examples below >>
+
+### Command results
+
+Typically a set of objects.
+
+* Get-Member
+
+### Multiple-lines
+
+The line-break after the pipe will allow continuing the command in the next line
+
+```powershell
+$data = Get-Service |
+where-Object Status -eq 'Stopped' |
+select-object Name,Status
+
+$data | out-file .\services.txt
+$data | export-csv .\services.csv
+
+# Load the file content and dump it in the console
+get-content .\services.csv
+
+$importData = import-csv -Path .\services.csv
+
+```
+
+
