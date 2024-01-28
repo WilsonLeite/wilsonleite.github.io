@@ -13,7 +13,7 @@ This version runs only on Windows and supports more Windows-specific commands or
 The latest (and final) version is 5.1:
 
 ```powershell
-> $PSVersionTable
+PS C:\> $PSVersionTable
 
 Name                           Value
 ----                           -----
@@ -30,7 +30,7 @@ This is the new version based on .Net Core - Nowadays just called _.Net_. It run
 It typically does not come installed on Windows. There are several ways to [install](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell) it, but one of the simpler ways to install it on Windows is:
 
 ```batchfile
-winget install --id Microsoft.PowerShell
+C:\> winget install --id Microsoft.PowerShell
 ``` 
 
 Once installed, it can be run from the Start Menu, Windows Terminal, and Command Prompt by invoking _pwsh.exe_.

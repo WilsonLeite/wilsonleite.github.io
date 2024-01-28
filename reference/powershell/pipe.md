@@ -1,4 +1,4 @@
-PowerShell - Pipes
+# PowerShell - Pipes
 
 ## Using pipes
 
@@ -26,7 +26,9 @@ PowerShell - Pipes
 
 * Get-Member?
 
--PassThru option
+### PassThru
+
+The _-PassThru_ option retuns a value that otherwise would not be returned:
 
 << Pipes, parameter arrays, hash parameters >>
 << See more examples below >>

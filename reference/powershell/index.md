@@ -1,6 +1,6 @@
 # PowerShell
 
-See the [Table of Contents](./toc.md)
+See also the [Tutorial](./toc.md).
 
 ## Examples
 
@@ -16,6 +16,15 @@ Filter files in a folder tree
 - Using variables
 
 - Change the version tag in XML config files
+
+## How-to
+
+* Work with text and CSV [files](./file.md)
+    * Read a file and filter the output lines
+* Convert all properties of an array of objects to text
+* Use PowerShell instead of Windows Prompt
+* Using remote computers and copying files
+
 
 <!--
 ### Notes
