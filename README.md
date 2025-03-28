@@ -5,6 +5,10 @@
 * [Markdown](reference/language/markdown/index.md)
 * [PowerShell](./reference/powershell/index.md)
 
+## Frameworks
+
+* [.NET MAUI](./reference/maui/index.md)
+
 ## Cloud
 
 * [Azure](./azure/index.md)
