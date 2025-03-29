@@ -35,7 +35,7 @@ public MainPage(MainViewModel viewModel)
 
 ### Data binding
 
-- Create a single object:
+- Using a single object:
 ```csharp
 [ObservableProperty]
 private string? myLabel; 
@@ -47,7 +47,7 @@ private string? myLabel;
 <Label Text="{Binding MyLabel}" ...
 ```
 
-- Create a collection:
+- Using a collection:
 
 ```csharp
 [ObservableProperty]
@@ -58,7 +58,8 @@ ObservableCollection<string> myOptions = ["Option 1", "Option 2"];
 <Picker ItemsSource="{Binding MyOptions}" />
 ```
 
-- Create a Command as an event handler:
+- Using a Command as an event handler:
+
 ```csharp
 [RelayCommand]
 private void ButtonClicked()
@@ -72,7 +73,7 @@ private void ButtonClicked()
 <Button Text="Click here" Command="{Binding ButtonClickedCommand}"/>
 ```
 
-- Create parameterized commands:
+- Using a parameterized command:
 
 ```csharp
 [RelayCommand]
@@ -89,7 +90,41 @@ private void SpecificButtonClicked(Button source)
     CommandParameter="{Binding Source={RelativeSource Self}, Path=.}"
     />
 ```
-- Show a collection of strings using a template:
+
+- Using a command that can be disabled using a property
+
+```csharp
+
+// Approach 1: Notifying in the property
+[RelayCommand(CanExecute = nameof(CanClickButton))]
+private void ButtonClicked()
+{
+    MyLabel = "A button was clicked. Never again!";
+    CanClickButton = false;
+}
+
+private bool canClickButton = true;
+public bool CanClickButton
+{
+    get => canClickButton;
+    set => SetProperty(canClickButton, value, val => { canClickButton = val; ButtonClickedCommand.NotifyCanExecuteChanged(); });
+}
+
+// Approch 2: Notifying by the changer
+[RelayCommand(CanExecute = nameof(CanClickButton))]
+private void ButtonClicked()
+{
+    MyLabel = "A button was clicked";
+    CanClickButton = false;
+    ButtonClickedCommand.NotifyCanExecuteChanged();
+}
+
+[ObservableProperty]
+private bool canClickButton = true;
+
+```
+
+- Showing a collection of strings using a template:
 
 ```xml
 <CollectionView ItemsSource="{Binding MyOptions}">
