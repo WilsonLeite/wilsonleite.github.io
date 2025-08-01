@@ -1,5 +1,9 @@
 # Reference
 
+## .NET
+
+* [Autofac](./dotnet/autofac/autofac.md)
+
 ## Languages
 
 * [Markdown](reference/language/markdown/index.md)
