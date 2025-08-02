@@ -40,6 +40,57 @@ protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs ar
 }
 ```
 
+## .NET MAUI
+
+Create the configuration in the _MauiProgram_ class
+
+```csharp
+public static MauiApp CreateMauiApp()
+{
+    var builder = MauiApp.CreateBuilder();
+    builder
+        .UseMauiApp<App>()
+        .ConfigureFonts(fonts =>
+        {
+            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+            fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+        })
+        .ConfigureContainer(new AutofacServiceProviderFactory(), ConfigureDependencyInjectionContainer);
+...
+}
+
+private static void ConfigureDependencyInjectionContainer(ContainerBuilder builder)
+{
+    ...
+}
+```
+
+## Registering
+
+```csharp
+
+// Register all classes in the current assembly
+var currentAssembly = Assembly.GetExecutingAssembly();
+
+builder.RegisterAssemblyTypes(currentAssembly);
+
+builder.RegisterAssemblyTypes(currentAssembly)
+    .AsImplementedInterfaces();
+
+// Register a class that can be directly depended on
+builder.RegisterType<MyClass>().AsSelf();
+
+// Register a class that implements an interface
+builder.RegisterType<MyClass>().As<IMyClass>();
+
+
+
+
+```
+
+Note that classes not registered can still be instantiated using the default Dependency Injection service used by .NET MAUI leading to initialization errors.
+
+
 ## Usage
 
 ### Injecting a dependency in the constructor:
