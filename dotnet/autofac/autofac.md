@@ -12,8 +12,6 @@ Create the Global Scope in the Program class:
 ```csharp
 internal class Program
 {
-    public required ILifetimeScope GlobalScope { private get; init; }
-
     public static void Main(string[] args)
     {
         using (var globalScope = CreateDependencyInjectionGlobalScope())

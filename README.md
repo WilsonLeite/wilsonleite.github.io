@@ -12,6 +12,7 @@
 ## Frameworks
 
 * [.NET MAUI](./reference/maui/index.md)
+* [.NET MAUI & WinUI 3 MVVM](./dotnet/desktop/mvvm.md)
 
 ## Cloud
 
