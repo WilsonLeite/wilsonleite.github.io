@@ -3,6 +3,8 @@
 ## .NET
 
 * [Autofac](./dotnet/autofac/autofac.md)
+* [Binding](./dotnet/desktop/binding.md)
+* [.NET MAUI & WinUI 3 MVVM](./dotnet/desktop/mvvm.md)
 
 ## Languages
 
@@ -12,7 +14,6 @@
 ## Frameworks
 
 * [.NET MAUI](./reference/maui/index.md)
-* [.NET MAUI & WinUI 3 MVVM](./dotnet/desktop/mvvm.md)
 
 ## Cloud
 

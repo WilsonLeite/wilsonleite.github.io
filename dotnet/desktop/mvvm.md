@@ -293,3 +293,21 @@ private void ItemClicked(ItemModel item)
     </CollectionView.ItemTemplate>
 </CollectionView>
 ```
+
+# Using partial properties in WinUI3
+
+Set the language version = preview in the .csproj file:
+
+```xml
+    ...
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+</PropertyGroup>
+```
+
+Create properties as partial:
+
+```csharp
+[ObservableProperty]
+public partial string ButtonText { get; set; } = "Click this button";
+```
